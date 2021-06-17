@@ -8,6 +8,24 @@
             background: #91a88a;
         }
     </style>
+    <!-- Header Tag Code -->
+    <script data-cfasync='false' type='text/javascript'>(function (a, c, s, u) {
+      'Insticator' in a || (a.Insticator = {
+        ad: {
+          loadAd: function (b) {
+            Insticator.ad.q.push(b)
+          }, q: []
+        }, helper: {}, embed: {}, version: '4.0', q: [], load: function (t, o) {
+          Insticator.q.push({ t: t, o: o })
+        }
+      })
+      var b = c.createElement(s)
+      b.src = u
+      b.async = !0
+      var d = c.getElementsByTagName(s)[0]
+      d.parentNode.insertBefore(b, d)
+    })(window, document, 'script', '//d3lcz8vpax4lo2.cloudfront.net/ads-code/c07ca12b-16bf-4e9d-b6e0-79695def0c0b.js')</script>
+    <!-- End Header Tag Code -->
 </head>
 <body>
 <section class="tall-block"></section>
@@ -18,32 +36,24 @@
 <section class="widget-section" style="width:800px">
     <div class="insticator-unit type-commenting">
         <div class="insticator-ads">
-            <div id="div-insticator-ad-cmt-1">
-                <iframe width="300px" height="250px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                        sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation allow-presentation"
-                        src="https://dashboard.insticator.com/embeds/backfillad?dimension=300x250&amp;siteURL=content-mocks.com"></iframe>
-            </div>
-            <div id="div-insticator-ad-cmt-2">
-                <iframe width="300px" height="250px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                        sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation allow-presentation"
-                        src="https://dashboard.insticator.com/embeds/backfillad?dimension=300x250&amp;siteURL=content-mocks.com"></iframe>
-            </div>
+            <div id="div-insticator-ad-cmt-1"></div>
+            <div id="div-insticator-ad-cmt-2"></div>
+            <script data-cfasync="false" type="text/javascript">
+              Insticator.ad.loadAd('div-insticator-ad-cmt-1')
+              Insticator.ad.loadAd('div-insticator-ad-cmt-2')
+            </script>
         </div>
         <div id="insticator-commenting">
             <div class="so-comments" data-integration-id="07197e89-db12-4885-b474-380d68768404"></div>
             <script async src="https://soapps.net/live/loader/bundle.js"></script>
         </div>
         <div class="insticator-ads additional">
-            <div id="div-insticator-ad-cmt-3">
-                <iframe width="300px" height="250px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                        sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation allow-presentation"
-                        src="https://dashboard.insticator.com/embeds/backfillad?dimension=300x250&amp;siteURL=content-mocks.com"></iframe>
-            </div>
-            <div id="div-insticator-ad-cmt-4">
-                <iframe width="300px" height="250px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                        sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation allow-presentation"
-                        src="https://dashboard.insticator.com/embeds/backfillad?dimension=300x250&amp;siteURL=content-mocks.com"></iframe>
-            </div>
+            <div id="div-insticator-ad-cmt-3"></div>
+            <div id="div-insticator-ad-cmt-4"></div>
+            <script data-cfasync="false" type="text/javascript">
+              Insticator.ad.loadAd('div-insticator-ad-cmt-3')
+              Insticator.ad.loadAd('div-insticator-ad-cmt-4')
+            </script>
         </div>
     </div>
 </section>
