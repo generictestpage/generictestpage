@@ -1,37 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Performance Testing</title>
-    <link rel="stylesheet" href="/css/test.css">
-    <style>
-        body {
-            background: #91a88a;
-        }
-    </style>
+  <title>Performance Testing</title>
+  <link rel="stylesheet" href="/css/test.css">
+  <style>
+    body {
+      background: #91a88a;
+    }
+  </style>
+  <script data-cfasync="false" type="text/javascript"> // what is cfasync tag??
+    (function (w, d, s, a) {
+      'Insticator' in w ||
+        (w.Insticator = {
+          ad: {
+            loadAd: function (b) { Insticator.ad.q.push(b) },
+            q: []
+          },
+          helper: {},
+          embed: {},
+          version: "4.0", // Do we need that?
+          q: [],
+          load: function (t, o) { Insticator.q.push({ t: t, o: o }) }
+        });
+      function c(u) {
+        var r = d.createElement(s);
+        r.src = u;
+        var n = d.getElementsByTagName(s)[0];
+        n.parentNode.insertBefore(r, n)
+      }
+      c(a);
+    })(window, document, 'script', 'https://product.instiengage.com/product-loader-script/loader.js')
+  </script>
 </head>
+
 <body>
-<section class="tall-block"></section>
+  <section class="tall-block"></section>
 
-<h1>HARDCODED COMMENTING (no ads Performance Testing)</h1>
+  <h1>HARDCODED COMMENTING (no ads Performance Testing)</h1>
 
-<h3>INTEGRATION 07197e89-db12-4885-b474-380d68768404</h3>
-<section class="widget-section" style="width:800px">
+  <h3>INTEGRATION 07197e89-db12-4885-b474-380d68768404</h3>
+  <section class="widget-section" style="width:800px">
     <div class="insticator-unit type-commenting">
-        <div class="insticator-ads">
-            <div id="div-insticator-ad-cmt-1"></div>
-            <div id="div-insticator-ad-cmt-2"></div>
-        </div>
-        <div id="insticator-commenting">
-            <div class="so-comments" data-integration-id="07197e89-db12-4885-b474-380d68768404"></div>
-            <script async src="https://soapps.net/live/loader/bundle.js"></script>
-        </div>
-        <div class="insticator-ads additional">
-            <div id="div-insticator-ad-cmt-3"></div>
-            <div id="div-insticator-ad-cmt-4"></div>
-        </div>
+      <div class="insticator-ads">
+        <div id="div-insticator-ad-cmt-1"></div>
+        <div id="div-insticator-ad-cmt-2"></div>
+      </div>
+      <div id="insticator-commenting">
+        <div class="so-comments" data-integration-id="07197e89-db12-4885-b474-380d68768404"></div>
+        <script>Insticator.load('comments')</script>
+      </div>
+      <div class="insticator-ads additional">
+        <div id="div-insticator-ad-cmt-3"></div>
+        <div id="div-insticator-ad-cmt-4"></div>
+      </div>
     </div>
-</section>
+  </section>
 
-<section class="tall-block"></section>
+  <section class="tall-block"></section>
 </body>
+
 </html>
