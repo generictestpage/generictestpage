@@ -8,6 +8,29 @@
             background: #91a88a;
         }
     </style>
+    <script>
+      (function (w, d, s, a) {
+        'Insticator' in w ||
+          (w.Insticator = {
+            ad: {
+              loadAd: function (b) { Insticator.ad.q.push(b) },
+              q: []
+            },
+            helper: {},
+            embed: {},
+            version: "4.0", // Do we need that?
+            q: [],
+            load: function (t, o) { Insticator.q.push({ t: t, o: o }) }
+          });
+        function c(u) {
+          var r = d.createElement(s);
+          r.src = u;
+          var n = d.getElementsByTagName(s)[0];
+          n.parentNode.insertBefore(r, n)
+        }
+        c(a);
+      })(window, document, 'script', 'https://product.instiengage.com/product-loader-script/loader.js')
+    </script>
 </head>
 <body>
 <section class="tall-block"></section>
